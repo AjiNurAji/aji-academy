@@ -100,3 +100,21 @@
 .text-bold {
   font-weight: 700;
 }
+
+@media screen and (max-width: 1180px) {
+  .container {
+    margin: 0 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    margin: 0 20px;
+  }
+}

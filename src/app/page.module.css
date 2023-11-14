@@ -222,3 +222,21 @@
   -ms-transform: rotate(0deg);
   -o-transform: rotate(0deg);
 }
+
+@media screen and (max-width: 920px) {
+  .wrapper_sidebar {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper_sidebar {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wrapper_sidebar {
+    width: 100%;
+  }
+}
