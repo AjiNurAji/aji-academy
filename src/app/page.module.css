@@ -1,5 +1,4 @@
 .navbar {
-  background-color: red;
   position: absolute;
   top: 0;
   right: 0;
@@ -223,9 +222,36 @@
   -o-transform: rotate(0deg);
 }
 
+.hero_section {
+  height: 100vh;
+  width: 100%;
+  background: url('/assets/img-hero.jpg') no-repeat center/cover;
+}
+
+.hero_section div div{
+  transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -o-transform: translateY(25%);
+}
+
+.hero_section .hero_wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero_wrapper h1 {
+  font-size: 50px;
+  width: 50%;
+}
+
 @media screen and (max-width: 920px) {
   .wrapper_sidebar {
     width: 60%;
+  }
+
+  .hero_wrapper h1 {
+    width: 70%;
   }
 }
 
@@ -233,10 +259,33 @@
   .wrapper_sidebar {
     width: 80%;
   }
+
+  .left_sidebar {
+    padding: 60px 30px;
+  }
+
+  .right_sidebar {
+    padding: 60px 0;
+  }
+
+  .hero_wrapper h1 {
+    width: 80%;
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .wrapper_sidebar {
     width: 100%;
+  }
+
+  .hero_wrapper h1 {
+    width: 100%;
+    font-size: 25px;
+  }
+
+
+  .hero_section {
+    background-position: right;
   }
 }
