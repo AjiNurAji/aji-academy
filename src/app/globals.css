@@ -134,13 +134,24 @@
 img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1180px) {
   .container {
     margin: 0 80px;
   }
+
+  #about .container {
+    margin: 0;
+  }
 }
+
+/* @media screen and (max-width: 920px) {
+  #about .container {
+    margin: 0 80px;
+  }
+} */
 
 @media screen and (max-width: 768px) {
   .container {

@@ -103,7 +103,7 @@ const Sidebar = ({
             </div>
             <div
               className={style.nav_link}
-              onClick={() => goto(linkWhy.current)}
+              onClick={() => goto(linkAbout.current)}
               id="about"
             >
               Tentang Kami
