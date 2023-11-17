@@ -1,7 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Utilities/Navbar";
-import style from '@/app/page.module.css'
 
 
 const poppins = Poppins({
@@ -21,7 +19,6 @@ export default function RootLayout({ children }) {
         <link rel="icon" href='/favicon.svg'/>
       </head>
       <body className={poppins.className}>
-        <Navbar style={style} />
         {children}
       </body>
     </html>

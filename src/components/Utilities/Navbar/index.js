@@ -1,15 +1,22 @@
-"use client"
+"use client";
 import { faBookOpenReader } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Sidebar from "@/components/Utilities/Sidebar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-const Navbar = ({ style }) => {
-  const [active, setActive] = useState(false)
-
+const Navbar = ({ style, linkHero, linkAbout, linkWhy, linkJenjang }) => {
+  const [active, setActive] = useState(false);
   const changeActive = () => {
-    setActive(true)
-  }
+    setActive(true);
+  };
+
+  useEffect(() => {
+    if (active) {
+      document.querySelector('body').classList.add('overflow-hidden')
+    } else {
+      document.querySelector('body').classList.remove('overflow-hidden')
+    }
+  })
 
   return (
     <header className={`flex items-center ${style.navbar}`}>
@@ -28,7 +35,15 @@ const Navbar = ({ style }) => {
           <span></span>
         </div>
       </div>
-      <Sidebar style={style} active={active} setActive={setActive} />
+      <Sidebar
+        style={style}
+        active={active}
+        setActive={setActive}
+        linkHero={linkHero}
+        linkAbout={linkAbout}
+        linkWhy={linkWhy}
+        linkJenjang={linkJenjang}
+      />
     </header>
   );
 };
