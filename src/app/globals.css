@@ -1,6 +1,7 @@
 :root {
   --color-green: #54b435;
   --color-sidebar: #292d3d;
+  --color-footer: #1F7E00;
   --border-radius: 15px;
   --transition: 0.3s ease-in-out;
 }

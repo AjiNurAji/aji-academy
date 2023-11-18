@@ -1,5 +1,6 @@
 "use client";
 import style from "@/app/page.module.css";
+import Footer from "@/components/Utilities/Footer";
 import Navbar from "@/components/Utilities/Navbar";
 import About from "@/components/Views/About";
 import Daftar from "@/components/Views/Daftar";
@@ -28,6 +29,7 @@ const Home = () => {
       <Why style={style} link={whyLink} />
       <Jenjang style={style} link={jenjangLink} />
       <Daftar style={style} />
+      <Footer style={style} />
     </>
   );
 };

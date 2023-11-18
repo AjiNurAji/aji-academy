@@ -158,6 +158,7 @@
   -o-transition: transform var(--transition);
 }
 
+.footer a:hover .icon_social,
 .sidebar a:hover .icon_social {
   transform: translateY(-10%);
   -webkit-transform: translateY(-10%);
@@ -493,6 +494,72 @@
   gap: 25px;
 }
 
+.footer {
+  background: var(--color-footer);
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.left_footer {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.right_footer {
+  flex: 0 0 45%;
+}
+
+.right_footer div {
+  margin-top: 20px;
+}
+
+.left_footer .icon_social {
+  width: 40px;
+  height: auto;
+}
+
+.time {
+  width: 100%;
+}
+
+.time .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.time p {
+  font-size: 50px;
+}
+
+.copyright {
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, .5);
+  width: 100%;
+}
+
 @media screen and (max-width: 1280px) {
   .text_box,
   .image_about_wrapper {
@@ -535,6 +602,14 @@
     flex-direction: column;
     width: 70%;
   }
+
+  .text_daftar h2 {
+    font-size: 40px;
+  }
+
+  .text_daftar p {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -566,6 +641,29 @@
   .why_text p {
     font-size: 25px;
   }
+
+  .footer_wrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .right_footer, .left_footer {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .left_footer div:nth-child(2) {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .text_daftar h2 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -580,5 +678,13 @@
 
   .box {
     width: 90%;
+  }
+
+  .text_daftar h2 {
+    font-size: 20px;
+  }
+
+  .text_daftar p {
+    font-size: 15px;
   }
 }
