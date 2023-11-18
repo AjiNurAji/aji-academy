@@ -381,6 +381,24 @@
   -o-border-radius: var(--border-radius);
 }
 
+.card_why:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+
+.card_why:hover .card_why_image img {
+  rotate: 2deg;
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+}
+
 .card_why_image {
   width: 100%;
   height: 190px;
@@ -463,9 +481,17 @@
   .box {
     width: 80%;
   }
+
+  .why_text h2 {
+    font-size: 15px;
+  }
+
+  .why_text p {
+    font-size: 25px;
+  }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 460px) {
   .wrapper_sidebar {
     width: 100%;
   }
