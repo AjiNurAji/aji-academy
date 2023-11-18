@@ -15,11 +15,11 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   text-decoration: none;
-  transition: all .3s ease-in-out;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -ms-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
 
 /* body {
@@ -172,7 +172,6 @@ img {
   #about .inner_container {
     padding: 0 !important;
   }
-
 }
 
 @media screen and (max-width: 768px) {

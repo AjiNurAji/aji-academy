@@ -243,7 +243,7 @@
 }
 
 .about_wrapper {
-  background: url('/assets/daun-bg.png') no-repeat center/cover;
+  background: url("/assets/daun-bg.png") no-repeat center/cover;
   padding: 150px 0;
   transition: all var(--transition);
   -webkit-transition: all var(--transition);
@@ -416,6 +416,57 @@
   padding: 15px 20px;
 }
 
+.jenjang_wrapper {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.card_jenjang_wrapper {
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card_jenjang {
+  background-color: #e9e9e9;
+  padding: 15px 20px;
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.card_jenjang:hover {
+  background-color: var(--color-green);
+  box-shadow: 0 0 10px var(--color-green);
+}
+
+.card_jenjang:hover h3 {
+  color: #fff;
+}
+
+.card_jenjang_image {
+  width: 100%;
+  height: 190px;
+}
+
+.card_jenjang_image img {
+  border-radius: var(--border-radius);
+  -webkit-border-radius: var(--border-radius);
+  -moz-border-radius: var(--border-radius);
+  -ms-border-radius: var(--border-radius);
+  -o-border-radius: var(--border-radius);
+}
+
+.card_jenjang h3 {
+  padding: 10px 0;
+  font-size: 25px;
+}
+
 @media screen and (max-width: 1280px) {
   .text_box,
   .image_about_wrapper {
@@ -453,7 +504,7 @@
   .hero_wrapper h1 {
     width: 70%;
   }
-  
+
   .box {
     flex-direction: column;
     width: 70%;
