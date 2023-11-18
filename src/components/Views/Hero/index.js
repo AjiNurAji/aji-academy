@@ -1,10 +1,10 @@
 const Hero = ({ style, link }) => {
   return (
-    <section className={style.hero_section} ref={link} id="home">
+    <section className={`container ${style.hero_section}`} ref={link} id="home">
       <div
         className={`flex justify-start items-center h-screen text-white ${style.hero_wrapper}`}
       >
-        <div className="container">
+        <div className="inner_container">
           <p>Selamat Datang di Aji Academy</p>
           <h1>
             <span className="text-primary">Pintu</span> Gerbang Pendidikan{" "}

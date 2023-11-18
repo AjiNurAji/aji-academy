@@ -19,8 +19,8 @@ const Navbar = ({ style, linkHero, linkAbout, linkWhy, linkJenjang }) => {
   })
 
   return (
-    <header className={`flex items-center ${style.navbar}`}>
-      <div className="flex justify-between items-center container">
+    <header className={`flex items-center ${style.navbar} container`}>
+      <div className="flex justify-between items-center inner_container w-full">
         <div
           className={`flex flex-column justify-center items-center ${style.logo_header}`}
         >

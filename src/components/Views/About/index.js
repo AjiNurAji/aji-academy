@@ -5,8 +5,8 @@ import { faBookOpenReader } from "@fortawesome/free-solid-svg-icons";
 
 const About = ({ style, link }) => {
   return (
-    <section className={style.about_wrapper} ref={link} id="about">
-      <div className="container">
+    <section className={`container ${style.about_wrapper}`} ref={link} id="about">
+      <div className="inner_container">
         <div className="flex justify-center items-center">
           <div className={style.box}>
             <div className={style.image_about_wrapper}>
